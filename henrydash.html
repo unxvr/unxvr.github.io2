@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>Website Design ("front end")</title>
+  <style>
+    body {
+      text-align: center;
+      background: url(https://hips.hearstapps.com/hmg-prod/images/dad-jokes-64481da90a211.jpeg);
+      background-size: cover;
+      background-position: center;
+      color: gray;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: #81b8b6;
+      color: blue;
+    }
+    img {
+      border-radius: 20px;
+      }
+  </style>
+</head>
+<body>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYGB3Y9xbjvD3626OkpKspQ8cY8pBJZUvp_JO6P4I&s">
+  <p>Hello I'm a baby and welcome to my website.</p>
+  <input id ="Name" type ="Name" placeholder="Your Name">
+  <input id="Email" placeholder="Your email">
+  <input id="submit" type="submit">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js";
+ 
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBiL3SDzii-SSv3YZYd83rfnsiKNSn6At0",
+      authDomain: "dash-4.firebaseapp.com",
+      projectId: "dash-4",
+      storageBucket: "dash-4.appspot.com",
+      messagingSenderId: "256269742903",
+      appId: "1:256269742903:web:3306fb4fc6fc2ffaf8e0b2"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+
